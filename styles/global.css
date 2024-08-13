@@ -54,6 +54,11 @@ h1 {
     color: var(--text-title);
 }
 
+h2 {
+    font: var(--title-sm);
+    color: var(--text-title);
+}
+
 a {
     text-decoration: none;
     font-family: var(--text-link);
