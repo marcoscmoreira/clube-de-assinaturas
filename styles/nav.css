@@ -1,0 +1,59 @@
+#hero-navigation {
+    
+    main  {
+        
+    }
+
+    background-image: url(../assets/images/book-hero-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    & nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3.5rem;
+    }
+
+    & .header-text {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        & h1 {
+            text-align: center;
+            
+            max-width: 41rem;
+            margin-top: 10.25rem;
+        }
+
+        & p {
+            max-width: 35.5rem;
+            margin-top: 2rem;
+            text-align: center;
+
+            color: var(--text-body);
+            font: var(--body-lg-regular);
+            margin-bottom: 29.375rem;
+        }
+    }
+}
+
+
+@media (width >=375px) {
+
+    & nav img[src*="logo-responsive"] {
+        display: none;
+    }
+    
+}
+
+@media (width <= 375px) {
+
+    & nav img[src*="logo-horizontal"] {
+        display: none;
+    }
+    
+}

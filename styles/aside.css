@@ -1,0 +1,22 @@
+#message {
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content: center;
+
+    & main span {
+        display: flex;
+        flex-direction: column;
+        font: var(--text-sub);
+        color: var(--text-body);
+
+        & strong {
+            display: flex;
+            flex-direction: row;
+            color: var(--blue-light);
+            font: inherit;
+        }
+    }
+
+
+}
