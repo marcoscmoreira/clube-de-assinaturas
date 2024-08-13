@@ -1,21 +1,30 @@
 #message {
+
+    width: 100%;
     display: grid;
-    grid-auto-flow: row;
-    align-items: center;
-    justify-content: center;
+    margin-top: 6rem;
+    
+    & header {
+        display: flex;
+        justify-content: center;
+    }
 
     & main span {
-        display: flex;
-        flex-direction: column;
+        display: inline-block;
         font: var(--text-sub);
         color: var(--text-body);
 
         & strong {
-            display: flex;
-            flex-direction: row;
+            display: inline-block;
             color: var(--blue-light);
             font: inherit;
         }
+    }
+
+    & footer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5rem;
     }
 
 
