@@ -15,6 +15,8 @@
             display: flex;
             justify-content: center;
             padding-block: 13.875rem;
+            background-color: radial-gradient(var(--pink-light), var(--pink-dark));
+            
 
             & img {
                 transform: scale(1.1);
