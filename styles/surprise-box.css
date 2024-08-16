@@ -1,5 +1,7 @@
 #surprise-box {
-    padding-block: 14.687rem;
+    margin-block: 14.687rem;
+    background: center/cover no-repeat url(../assets/images/book-blur.png);
+    
 
     & header {
         display: flex;

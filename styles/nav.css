@@ -1,15 +1,18 @@
 #hero-navigation {
     
-    background-image: url(../assets/images/book-hero-image.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background:  top/cover no-repeat url(../assets/images/book-hero-image.png);
+    /* background-position-y: top; */
+    /* height: 100vh; */
 
     & nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 3.5rem;
+
+        & button {
+            width: 5.5625rem;
+        }
     }
 
     & .header-text {
