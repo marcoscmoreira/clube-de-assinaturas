@@ -1,0 +1,94 @@
+#footer {
+    background: url(../assets/images/footer-image.png) top/cover;
+    height: 30vh;
+    align-content: center;
+
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        & .social-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: flex-start;
+
+            & .separator {
+                border: 1px solid var(--shape-stroke);
+            }
+
+            & .social-icons {
+                display: grid;
+                grid-auto-flow: column;
+                gap: 0.3125rem;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    width: 2.5rem;
+                    height: 2.5rem;
+
+                    border-radius: 5rem;
+
+                    position: relative;
+
+                    &:hover::before {
+                        scale: 1;
+                    }
+
+                    & img {
+                        width: 1.5rem;
+                        height: auto;
+                        z-index: 1;
+                    }
+
+                    &::before {
+                        content: '';
+
+                        width: inherit;
+                        height: inherit;
+                        border-radius: inherit;
+
+                        background-color: var(--shape-stroke);
+                        position: absolute;
+
+                        top: 0;
+                        left: 0;
+                        z-index: 0;
+
+                        scale: 0;
+                        transition: scale 200ms;
+                    }
+                }
+            }
+        }
+
+        & .site-map {
+            display: flex;
+            justify-content: space-between;
+            gap: 3.5rem;
+
+            & ul {
+                display: grid;
+                gap: 1.25rem;
+            }
+
+            & li {
+                color: var(--blue-light);
+                font: var(--link);
+            }
+
+            & li.title {
+                font: var(--title-sx);
+                color: var(--text-body);
+            }
+
+            & li:hover {
+                cursor: pointer;
+                color: var(--text-label);
+            }
+        }
+    }
+}
