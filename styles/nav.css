@@ -1,9 +1,7 @@
 #hero-navigation {
     
     background:  top/cover no-repeat url(../assets/images/book-hero-image.png);
-    /* background-position-y: top; */
-    /* height: 100vh; */
-
+    
     & nav {
         display: flex;
         justify-content: space-between;
@@ -41,17 +39,20 @@
 }
 
 
-@media (width >=375px) {
-
-    & nav img[src*="logo-responsive"] {
+@media (width <= 23.4375rem) {
+    & nav img[src*="logo-horizontal"] {
         display: none;
     }
     
 }
 
-@media (width <= 375px) {
+@media (width >= 375px) {
 
-    & nav img[src*="logo-horizontal"] {
+    #hero-navigation {
+        background-size: contain;
+    }
+
+    & nav img[src*="logo-responsive"] {
         display: none;
     }
     

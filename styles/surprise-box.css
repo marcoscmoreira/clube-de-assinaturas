@@ -1,7 +1,6 @@
 #surprise-box {
-    margin-block: 14.687rem;
+    /* margin-block: 10rem; */
     background: center/cover no-repeat url(../assets/images/book-blur.png);
-    
 
     & header {
         display: flex;
@@ -10,15 +9,11 @@
     }
 
     & .main {
-
-
         & .book {
             position: relative;
             display: flex;
             justify-content: center;
             padding-block: 13.875rem;
-            
-            
 
             & img {
                 transform: scale(1.1);
@@ -29,40 +24,40 @@
             cursor: pointer;
             & .back-book {
                 & img[src*="bootom"] {
-                    animation: bottom .2s forwards linear;
+                    animation: bottom 0.2s forwards linear;
                 }
 
                 & img[src*="book-mark-1"] {
                     z-index: 1;
-                    animation: book-mark-1 .2s forwards linear;
+                    animation: book-mark-1 0.2s forwards linear;
                 }
 
                 & img[src*="book-mark-2"] {
-                    animation: book-mark-2 .2s forwards linear;
+                    animation: book-mark-2 0.2s forwards linear;
                 }
 
                 & img[src*="arrow-book-mark"] {
-                    animation: arrow-book-mark .2s forwards linear;
+                    animation: arrow-book-mark 0.2s forwards linear;
                 }
 
                 & img[src*="arrow-broche"] {
-                    animation: arrow-broche .2s forwards linear;
+                    animation: arrow-broche 0.2s forwards linear;
                 }
 
                 & img[src*="arrow-description"] {
-                    animation: arrow-description .2s forwards linear;
+                    animation: arrow-description 0.2s forwards linear;
                 }
 
                 & span.page-mark {
-                    animation: page-mark .2s forwards linear;
+                    animation: page-mark 0.2s forwards linear;
                 }
 
                 & span.broche {
-                    animation: broche .2s forwards linear;
+                    animation: broche 0.2s forwards linear;
                 }
 
                 & span.livro {
-                    animation: livro .2s forwards linear;
+                    animation: livro 0.2s forwards linear;
                 }
             }
         }
@@ -188,12 +183,21 @@
     to {
         transform: translateX(-280px) translateY(60px);
     }
-
 }
 
 @keyframes livro {
     to {
         transform: translateX(-280px) translateY(-100px);
     }
+}
 
+@media (width <= 23.4375rem) {
+    #surprise-box {
+        margin-block: 2rem;
+
+        & .main {
+            scale: .5;
+            margin-right: 3rem;
+        }
+    }
 }
